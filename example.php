@@ -36,10 +36,10 @@ $from = '923001234567';
 // Step 4: the number we are sending to - Any phone number
 $destination = '923001234568';
 
-// Step 5: Replace your Install URL like https://mywebhost.com/sms/api with https://ultimatesms.coderpixel.com/demo/
-// <sms/api> is mandatory.
+// Step 5: Replace your Install URL like https://my.karobarsms.com/api/  Trailing Slash is mandatory.
 
-$url = 'https://my.karobarsms.com/api';
+//url must be ending with a trailing slash if directory or  file extension like .php
+$url = 'https://my.karobarsms.com/api/';
 
 // the sms body
 $sms = 'test message from Karobar SMS';
@@ -55,7 +55,7 @@ $sms_body = array(
     'api_key' => $api_key,
     'to' => $destination,
     'mask' => $from,
-    'text' => $sms
+    'text' => $sms,
     'unicode' => $unicode,
 );
 
