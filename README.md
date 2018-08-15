@@ -161,26 +161,27 @@ $response = $client->send_sms($sms_body, $url);
 ## Get Inbox
 Get your all message
 ```php
-$get_inbox=$client->get_inbox($api_key,$url);
+$get_inbox=$client->get_inbox($username,$api_key,$url);
 ```
 
 ## Get Balance
 Get your account balance
 ```php
-$get_balance=$client->check_balance($api_key,$url);
+$get_balance=$client->check_balance($username,$api_key,$url);
 ```
 ## Response
 Karobar SMS API return response with `json` format, like:
 
 ```json
-{"code":"ok","message":"Successfully Send"}
+{"code":"OK","message":"Successfully Send"}
 ```
 
 ## Status Code
 
+
 | Status | Message |
 | --- | --- |
-| `ok` | Successfully Send |
+| `OK` | Successfully Send |
 | `100` | Bad gateway requested |
 | `101` | Wrong action |
 | `102` | Authentication failed |
@@ -193,6 +194,8 @@ Karobar SMS API return response with `json` format, like:
 | `109` | Invalid Schedule Time |
 | `110` | Media url required |
 | `111` | SMS contain spam word. Wait for approval |
+| `112` | Missing Required Parameters |
+| `999` | Feature Not Available yet |
 
 ## Authors
 

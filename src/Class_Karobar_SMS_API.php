@@ -85,8 +85,8 @@ class KarobarSMSAPI
      *
      */
 
-    public function get_inbox($api_key,$url){
-        $post_body='action=get-inbox&api_key='.$api_key;
+    public function get_inbox($username,$api_key,$url){
+        $post_body='action=get-inbox&uname='.$username.'&api_key='.$api_key;
 
         $response=$this->send_server_response($url,$post_body);
 
@@ -104,8 +104,8 @@ class KarobarSMSAPI
      *
      */
 
-    public function check_balance($api_key,$url){
-        $post_body='action=check-balance&api_key='.$api_key;
+    public function check_balance($username,$api_key,$url){
+        $post_body='action=check-balance&uname='.$username.'&api_key='.$api_key;
 
         $response=$this->send_server_response($url,$post_body);
 

@@ -76,9 +76,9 @@ echo 'Message: '.$response->message;
 
 
 //Step 9: Get your inbox
-$get_inbox=$client->get_inbox($api_key,$url);
+$get_inbox=$client->get_inbox($username,$api_key,$url);
 
 //Step 10: Get your account balance
 
-$check_balance=$client->check_balance($api_key,$url);
+$check_balance=$client->check_balance($username,$api_key,$url);
 
