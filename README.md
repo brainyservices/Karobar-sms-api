@@ -51,13 +51,13 @@ $username = 'user_name_here';
 ### Step 3:
 Change the from number below. It can be a valid phone number or a String
 ```php
-$from = '8801721000000';
+$from = '923001234567';
 ```
 
 ### Step 4:
 the number we are sending to - Any phone number
 ```php
-$destination = '8801810000000';
+$destination = '923001234568';
 ```
 You have to must include Country code at beginning of the phone number.  
 
@@ -66,7 +66,7 @@ Replace your Install URL like `https://mywebhost.com/sms/api` with `https://ulti
 `sms/api` is mandatory on your install url
 
 ```php
-$url = 'https://ultimatesms.coderpixel.com/demo/sms/api';
+$url = 'https://my.karobarsms.com/api';
 ```
 // SMS Body
 ```php
@@ -92,7 +92,7 @@ $schedule_date = '09/17/2018 10:20 AM'; //Date like this format: m/d/Y h:i A
 // Create Plain/text SMS Body for request
 ```php
 $sms_body = array(
-    'uname' => $api_key,
+    'uname' => $username,
     'api_key' => $api_key,
     'to' => $destination,
     'mask' => $from,
@@ -102,7 +102,7 @@ $sms_body = array(
 // Create Unicode SMS Body for request
 ```php
 $sms_body = array(
-    'uname' => $api_key,
+    'uname' => $username,
     'api_key' => $api_key,
     'to' => $destination,
     'mask' => $from,
@@ -114,7 +114,7 @@ $sms_body = array(
 // Create Voice SMS Body for request
 ```php
 $sms_body = array(
-    'uname' => $api_key,
+    'uname' => $username,
     'api_key' => $api_key,
     'to' => $destination,
     'mask' => $from,
@@ -125,7 +125,7 @@ $sms_body = array(
 // Create MMS SMS Body for request
 ```php
 $sms_body = array(
-    'uname' => $api_key,
+    'uname' => $username,
     'api_key' => $api_key,
     'to' => $destination,
     'mask' => $from,
@@ -137,7 +137,7 @@ $sms_body = array(
 // Create Schedule SMS Body for request
 ```php
 $sms_body = array(
-    'uname' => $api_key,
+    'uname' => $username,
     'api_key' => $api_key,
     'to' => $destination,
     'mask' => $from,

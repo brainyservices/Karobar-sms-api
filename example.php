@@ -25,17 +25,21 @@ use KarobarSMS\KarobarSMSAPI;
 
 $api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 
+// Step 2.1: set your Username
+
+$username = 'user_name_here';
+
 
 // Step 3: Change the from number below. It can be a valid phone number or a String
-$from = '8801721000000';
+$from = '923001234567';
 
 // Step 4: the number we are sending to - Any phone number
-$destination = '8801810000000';
+$destination = '923001234568';
 
 // Step 5: Replace your Install URL like https://mywebhost.com/sms/api with https://ultimatesms.coderpixel.com/demo/
 // <sms/api> is mandatory.
 
-$url = 'https://ultimatesms.coderpixel.com/demo/sms/api';
+$url = 'https://my.karobarsms.com/api';
 
 // the sms body
 $sms = 'test message from Karobar SMS';
@@ -47,10 +51,11 @@ $unicode = 1; //For Unicode Message
 
 // Create SMS Body for request
 $sms_body = array(
+    'uname' => $username,
     'api_key' => $api_key,
     'to' => $destination,
-    'from' => $from,
-    'sms' => $sms,
+    'mask' => $from,
+    'text' => $sms
     'unicode' => $unicode,
 );
 
