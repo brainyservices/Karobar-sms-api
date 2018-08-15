@@ -15,13 +15,13 @@ Karobar SMS - Bulk SMS Application For Markting
 ### Installing
 Via Composer
 ```
-composer require brainyservices/karobar_sms_api 
+composer require brainyservices/karobar-sms-api 
 ```
 
 And Via Bash
 
 ```
-git clone https://github.com/brainyservices/karobar_sms_api.git
+git clone https://github.com/brainyservices/karobar-sms-api.git
 ```
 
 ## Usage
